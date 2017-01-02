@@ -26,6 +26,8 @@ fit_left = np.polyfit((left_bottom[0], apex[0]), (left_bottom[1], apex[1]), 1)
 fit_right = np.polyfit((right_bottom[0], apex[0]), (right_bottom[1], apex[1]), 1)
 fit_bottom = np.polyfit((left_bottom[0], right_bottom[0]), (left_bottom[1], right_bottom[1]), 1)
 
+print fit_left
+print fit_right
 # Find the region inside the lines
 # Creates all possible combintaions of points in the image and stores them in XX,YY
 XX, YY = np.meshgrid(np.arange(0, xsize), np.arange(0, ysize))
